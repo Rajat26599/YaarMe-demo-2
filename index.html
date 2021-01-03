@@ -80,6 +80,27 @@
             <h6>YaarMe</h6>
             <p>yaarme.com</p>
           </div>
+
+          <div class="numbers container row">
+            <p id="reaction-number" class="col-6" style="text-align:left;">344 reactions</p>
+            <p class="col-6" style="text-align:right;">5 shares</p>
+          </div>
+
+          <hr style="margin:0px;">
+          <div class="row container reactions">
+            <div id="like" class="col-3" onclick="myFunction()">
+              <p><i class="fa fa-thumbs-up"></i><br>&nbsp&nbsp Like</p>
+            </div>
+            <div id="comment" class="col-3">
+              <p><i class="fa fa-comment"></i><br>&nbsp Comment</p>
+            </div>
+            <div id="share" class="col-3">
+              <p><i class="fa fa-share"></i><br>&nbsp&nbsp Share</p>
+            </div>
+            <div id="send" class="col-3">
+              <p><i class="fa fa-paper-plane"></i><br>&nbsp&nbsp Send</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -88,5 +109,19 @@
       </div>
 
     </div>
+
+    <!-- SCRIPTS -->
+    <script>
+      function myFunction() {
+        if(document.getElementById("like").style.color == "black") {
+          document.getElementById("like").style.color = "blue";
+          document.getElementById("reaction-number").innerHTML = "345 reactions";
+        }
+        else {
+          document.getElementById("like").style.color = "black";
+          document.getElementById("reaction-number").innerHTML = "344 reactions";
+        }
+      }
+    </script>
   </body>
 </html>

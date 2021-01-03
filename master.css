@@ -88,9 +88,7 @@ body {
 }
 .preview {
   background-color: #dddddd;
-}
-.fa {
-  padding: 0px 0px 0px 15px;
+  box-shadow: 1px -2px 3px 1px rgba(0,0,0,0.2);
 }
 .publish {
   background-color: #0e76a8;
@@ -103,9 +101,25 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+}
+
+/* ICON STYLINGS */
+.fa {
+  padding: 0px 0px 0px 15px;
 }
 .fa-edit {
   position: relative;
   top: 75%;
   right: 20%;
+}
+
+/* REACTIONS */
+.reactions {
+  text-align: center;
+}
+.numbers {
+  font-size: 0.9em;
+  color: #555555;
+  margin: -5px;
 }
